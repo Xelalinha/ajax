@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+
+    <style>
+        /*Seletores CSS são os elementos em uma regra CSS que identificam os componentes HTML que receberão o estilo definido.
+        
+        Tipos:
+        */
+
+        /*Seletor de Tipo, define todas as características de um tipo específico, exemplo:*/
+        h1{
+            color: orange;
+        }
+
+        /*Seletor de Classe, define todas as características de uma classe específica, exemplo:*/
+        .classe1{
+            background-color: lightblue;
+        }
+
+        /*Seletor de ID, define as características de um único elemento específico, exemplo:*/
+        #id1{
+            font-size: 40px;
+        }
+
+        /*Seletor de atributo, seleciona elementos com base na presença de um determinado atributo em um elemento, exemplo:*/
+        p[title] {
+            font-size: 25px;
+        }
+
+        /*Seletor de Pseudo classe, seleciona elementos e definem o estilo de certos estados do elemento, como no exemplo abaixo, o elemento se modifica ao passar o mouse por cima:*/
+        #id1:hover {
+            font-size: 50px;
+        }
+
+        /*Seletor de Pseudoelementos, seleciona uma determinada parte de um elemento em vez do próprio elemento, no exemplo abaixo ::first-line sempre seleciona a primeira linha de texto dentro de um elemento:*/
+        #id2::first-line {
+            color: orange;
+        }
+
+        /*Seletor Combinadores, Seleciona elementos que são descendentes de um determinado elemento pai, utilizando o (> ou <). Exemplo:*/
+        div > p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de Seletores</h1>
+    <p class="classe1" title="">Por classe e seletor de atributo</p>
+    <p id="id1">Por id e pseudo classe</p>
+    <p id="id2">Seletor pseudoelementos<br> quae harum incidunt ducimus tempore doloremque laborum temporibus, asperiores, quidem eos nostrum assumenda aut molestiae laudantium voluptatem.</p>
+
+    <div>
+        <p>Seletor por Combinadores</p>
+    </div>
+</body>
+</html>

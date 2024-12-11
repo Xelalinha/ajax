@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box1{
+            background-color: purple;
+        }
+
+        #box2{
+            background-color: green;
+        }
+
+        #box3{
+            background-color: red;
+        }
+
+        #box4{
+            background-color: yellow;
+        }
+
+        .boxA{
+            height: 100px;
+            width: 100%;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .boxB {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .boxC {
+            height: 100px;
+            width: 100px;
+            position:absolute;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #box5{
+            background-color: #d607ff;
+            right:38%;
+            top:38%;
+        }
+
+        #box6{
+            background-color: #008000;
+            right:0px;
+            bottom:0px;  
+        }
+
+        #box7{
+            background-color: #ff0000;
+            top:0px;
+            left:0px;
+        }
+            
+        #box8{
+            background-color: #ffff00;
+            top:0px;
+            right:0px;
+        }
+
+        #box9{
+            background-color: #0000ff;
+            bottom:0px;
+            left:0px;
+        }
+    </style>
+</head>
+<body>
+    <p>Altura definida para 100px e largura em 100%:</p>
+    <div class="boxA" id="box1">1</div>
+    <div class="boxA" id="box2">2</div>
+    <div class="boxA" id="box3">3</div>
+    <div class="boxA" id="box4">4</div>
+    <br>
+    <p>Utilizando inline-block:</p>
+    <div class="boxB" id="box1">1</div><div class="boxB" id="box2">2</div><div class="boxB" id="box3">3</div><div class="boxB" id="box4">4</div>
+    <br>
+    <br>
+    <p>Utilizando position:</p>
+    <div class="container">
+        <div class="boxC" id="box5">5</div>
+        <div class="boxC" id="box6">6</div>
+        <div class="boxC" id="box7">7</div>
+        <div class="boxC" id="box8">8</div>
+        <div class="boxC" id="box9">9</div>
+
+    </div>
+</body>
+</html>

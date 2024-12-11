@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 100px;
+            box-sizing: border-box;
+        }
+
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container{
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-rows: 1fr 1fr 5fr 1fr 0.3fr;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas: 
+            "header header header"
+            "lF main rS"
+            "lF main rS"
+            "lC lC lC"
+            "footer footer footer";
+            background-color: black;
+        }
+
+        header{
+            grid-area: header;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4%;
+        }
+
+        .leftSide{
+            grid-area: lF;
+            background-color: rgb(28, 28, 28);
+        }
+
+        .rightSide{
+            grid-area: rS;
+            background-color: rgb(28, 28, 28);
+        }
+
+        main{
+            grid-area: main;
+            background: linear-gradient(to top, rgb(28, 28, 28), rgb(108, 18, 157));
+        }
+
+        .lowContent{
+            grid-area: lC;
+            background-color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            color: white;
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: rgb(2, 162, 2);
+            text-align: end;
+            font-size: 70px;
+        }
+
+        textarea{
+            background-color: gray;
+            border-radius: 20%;
+        }
+
+        #NomeMusica{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        button{
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            background-image: url(images/home.png);
+        }
+
+        #foto{
+            height: 400px;
+        }
+
+        #fotoAlbum{
+            height: 1500px;
+        }
+
+        @media (max-width: 500px) or (max-height: 900px) {
+            .container {
+                grid-template-areas: 
+                    "header"
+                    "lF"
+                    "main"
+                    "rS"
+                    "lC"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button></button>
+            <textarea name="" id=""  placeholder="O que você quer ouvir?"></textarea>
+            <img src="" alt="">
+        </header>
+        <main></main>
+        <div class="leftSide"></div>
+        <div class="rightSide">
+            <img id="fotoAlbum" src="images/album.png" alt="album">
+            <div id="NomeMusica">
+                <h5 style="color: white;">AO TEU LADO</h5>
+                <p style="font-size: 60px; color: white;">Liniker, Amaro Freitas e ANAVITÓRIA</P>
+            </div>
+        </div>
+        <div class="lowContent">
+            <img id="foto" src="images/album.png" alt="album">
+            <div id="NomeMusica">
+                <h5>AO TEU LADO</h5>
+                <p style="font-size: 60px;">Liniker, Amaro Freitas e ANAVITÓRIA</P>
+            </div>
+        </div>
+        <footer>Tocando em SmartPhone de Tal</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            outline: 1px solid black;
+            margin: 10px;
+        }
+
+        #box1 { 
+            background-color: red; 
+            border-top: 5px solid darkred;
+            padding: 20px;
+            border-radius: 5%;
+        }
+
+        #box2 { 
+            background-color: blue; 
+            border-top-left-radius: 5%;
+            border-top-right-radius: 7%;
+        }
+
+        #box3 { 
+            background-color: green; 
+            background: linear-gradient(to right, yellow, orange);
+        }
+
+        #box4 {
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 12px 16px teal;
+            opacity: 0.5;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+
+        html, body {
+            border: 1px solid red;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box1:hover {
+            background-color: orange;
+        }
+
+        #box2:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">div-1</div>
+    <div class="box" id="box2">div-2</div>
+    <div class="box" id="box3">div-3</div>
+    <div class="box" id="box4">div-4</div>
+
+    <ol type="a">
+        <li>A-As bordas ficaram visíveis em todos os elementos da classe.</li>
+        <li>B-Cada div recebeu uma cor de fundo individualmente.</li>
+        <li>C-O fundo do body foi definido como cinza claro, com bordas no body e no html.</li>
+        <li>D-Todas as margens e paddings foram removidas utilizando seletor global(*).</li>
+        <li>E-Os elementos .box agora são exibidos em apenas 1 linha.</li>
+        <li>F-A borda superior do box1 foi alterada.</li>
+        <li>G-Os cantos do box1 foram arredondados em 5%.</li>
+        <li>H-Os cantos superiores do box2 ficaram arredondados</li>
+        <li>I-O box4 se tornou circular devido ao border-radius: 50%, com o texto centralizado e alinhado verticalmente ao centro da div.</li>
+        <li>J-Foi adicionada uma borda outline em cada div, porém não é possível vê-las+./li>
+        <li>K-Cada div agora possui uma margem ao redor, criando mais espaçamento entre elas.</li>
+        <li>L-O box3 recebeu um fundo com efeito de transição de cores entre amarelo e laranja.</li>
+        <li>M-aumentou o espaço interno entre o conteúdo e as bordas da div.</li>
+        <li>N-Deixou o box4 mais transparente.</li>
+        <li>O-Ao passar o mouse o box1 muda de cor e o box2 aumenta de tamanh.</li>
+        <li>P-O box4 agora tem uma sombra, projetada em direção a baixo e à direita</li>
+    </ol>
+</body>
+</html>

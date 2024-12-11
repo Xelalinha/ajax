@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 100px;
+            box-sizing: border-box;
+        }
+
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container{
+            display: grid;
+            width: calc(100% - 20px); /* Compensa a margem horizontal */
+            height: calc(100% - 20px); /* Compensa a margem vertical */
+            grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+            grid-template-columns: 1fr 3fr fr;
+            grid-template-areas: 
+            "header header header"
+            "lF nav rS"
+            "lF main rS"
+            "lF lC rS"
+            "footer footer footer";
+            gap: 20px;
+            margin: 10px;
+        }
+
+        header{
+            grid-area: header;
+            background-color: orange;
+        }
+
+        nav{
+            grid-area: nav;
+            background-color: brown;
+        }
+
+        .leftSide{
+            grid-area: lF;
+            background-color: green;
+        }
+
+        .rightSide{
+            grid-area: rS;
+            background-color: orange;
+        }
+
+        main{
+            grid-area: main;
+            background-color: lightblue;
+        }
+
+        .lowContent{
+            grid-area: lC;
+            background-color: green;
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: lightblue;
+        }
+
+        @media (max-width: 500px) or (max-height: 900px) {
+            .container {
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "lF"
+                    "main"
+                    "rS"
+                    "lC"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <nav>Banner</nav>
+        <main>Main Content</main>
+        <div class="leftSide">Left Aside</div>
+        <div class="rightSide">Right Aside</div>
+        <div class="lowContent">Low Content</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

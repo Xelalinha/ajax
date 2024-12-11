@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .janela{
+            border: 1px solid gray;
+            color: gray;
+            border-radius: 5%;
+            height: 60%;
+            width: 30%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+            margin: 2%;
+        }
+
+        .conversaAmigo{
+            width: 92%;
+            border: 1px solid gray;
+            border-radius: 6%;
+            color: black;
+            margin-bottom: 5%;
+            display: inline-block;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .conversaEu{
+            width: 92%;
+            border: 1px solid gray;
+            border-radius: 6%;
+            background-color: lightgreen;
+            color: black;
+            text-align: end;
+            margin-bottom: 5%;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        img{
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        .text{
+            text-align: end;
+        }
+
+        textarea {
+            width: 92%;
+            height: 100px; 
+            border: 1px solid gray;
+            border-radius: 6%;
+            padding: 10px;
+        }
+
+        button {
+            width: 50px;
+            height: 35px;
+            border: 1px solid gray;
+            border-radius: 6%;
+            background-color: lightblue;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="janela">
+        <div class="chat">
+            <p>Pedro Silva</p>
+            <div class="conversaAmigo">
+                <img src="images/user2.png" alt="Foto_Amigo">
+                <span>Olá, tudo bem?</span>
+            </div>
+        </div>
+        <div class="chat">
+            <p>Eu</p>
+            <div class="conversaEu">
+                <span>Estou bem sim, e você?</span>
+                <img src="images/user1.png" alt="Foto_Minha">
+            </div>
+        </div>
+        <div class="chat">
+            <p>Pedro Silva</p>
+            <div class="conversaAmigo">
+                <img src="images/user2.png" alt="Foto_Amigo">
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, perspiciatis. Exercitationem voluptate veniam?</span>
+            </div>
+        </div>
+        <div class="chat">
+            <p>Eu</p>
+            <div class="conversaEu">
+                <span>Criatura......</span>
+                <img src="images/user1.png" alt="Foto_Minha">
+            </div>
+            
+        </div>
+        
+        <div class="text">
+            <textarea name="" id="" placeholder="Digite sua mensagem"></textarea>
+            <button>
+                Enviar
+            </button>
+        </div>
+    </div>
+</body>
+</html>

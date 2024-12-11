@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+
+    <style>
+        *{  
+          margin: 0;
+          padding: 0;
+        }
+
+        body{
+            text-align: center;
+            height: 100vh;
+            overflow: hidden; /*faz com que o conteúdo que exceda o tamanho da página seja excluido '-'*/
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: row;
+            background-color: orange;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon{
+            height: 80px;
+            width: auto;
+        }
+
+        #id1{
+            background-image: url(Imagens/frangoBack.png);
+            width: 90px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: end;
+            padding: 5px;
+            border-radius: 5%;
+        }
+
+        #id1:hover{
+            background-image: url(Imagens/frangoBack.png);
+            width: 900px;
+            height: 600px;
+        }
+
+        #id2{
+            background-image: url(Imagens/peixeBack.png);
+            width: 90px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: end;
+            padding: 5px;
+            border-radius: 5%;
+        }
+
+        #id2:hover{
+            background-image: url(Imagens/peixeBack.png);
+            width: 900px;
+            height: 600px;
+        }
+
+        #id3{
+            background-image: url(Imagens/pizzaBack.png);
+            width: 90px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: end;
+            padding: 5px;
+            border-radius: 5%;
+        }
+
+        #id3:hover{
+            background-image: url(Imagens/pizzaBack.png);
+            width: 900px;
+            height: 600px;
+        }
+
+        #id4{
+            background-image: url(Imagens/saladaBack.png);
+            width: 90px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: end;
+            padding: 5px;
+            border-radius: 5%;
+        }
+
+        #id4:hover{
+            background-image: url(Imagens/saladaBack.png);
+            width: 900px;
+            height: 600px;
+        }
+
+        #id5{
+            background-image: url(Imagens/sushiBack.png);
+            width: 90px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: end;
+            padding: 5px;
+            border-radius: 5%;
+        }
+
+        #id5:hover{
+            background-image: url(Imagens/sushiBack.png);
+            width: 900px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MENU</h1>
+    <div class="menu">
+        <div id="id1">
+            <img src="Imagens/ceia-de-natal.png" alt="Frango" class="icon">
+        </div>
+        <div id="id2">
+            <img src="Imagens/peixe-e-batata-frita.png" alt="Peixe" class="icon">
+        </div>
+        <div id="id3">
+            <img src="Imagens/pizza.png" alt="Pizza" class="icon">
+        </div>
+        <div id="id4">
+            <img src="Imagens/salada.png" alt="Salada" class="icon">
+        </div>
+        <div id="id5">
+            <img src="Imagens/sushi.png" alt="Sushi" class="icon">
+        </div>
+    </div>
+</body>
+</html>
